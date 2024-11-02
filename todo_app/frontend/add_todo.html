@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>TODOリスト - TODO追加</title>
+</head>
+<body>
+  <div id="app">
+    <h1>TODOを追加</h1>
+    <input type="text" id="new-todo" placeholder="新しいTODOを入力...">
+    <button id="add-todo">追加</button>
+    <button id="back-button">戻る</button>
+  </div>
+  <script src="main.js"></script>
+  <script src="add_todo.js"></script>
+  <script>
+    console.log("Inline JavaScript is running");
+    const addTodoButton = document.getElementById("add-todo");
+    console.log("Add Todo Button (inline):", addTodoButton);
+  </script>
+</body>
+</html>
