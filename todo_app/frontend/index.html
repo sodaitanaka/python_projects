@@ -9,17 +9,33 @@
 <body>
   <div id="app">
     <h1>TODOリスト</h1>
-      <div id="button-container">
-        <button id="add-todo-button">1. TODOを追加</button>
-        <button id="change-status-button">2. ステータスを変更</button>
-        <button id="change-deadline-button">3. 期限を変更</button>
-        <button id="exit-button">4. 終了</button>
-      </div>
-      <ul id="todo-list">
+    <div class="todo-inputs">
+      <input type="text" id="new-todo-name" placeholder="新しいTODOを入力...">
+      <select id="new-todo-status">
+        <option value="to do">todo</option>
+        <option value="doing">doing</option>
+        <option value="done">tdone</option>
+      </select>
+      <input type="date" id="new-todo-deadline" placeholder="Deadline">
+      <button id="add-todo">追加</button>
+    </div>
+    <table id="todo-table">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>タスク名</th>
+          <th>ステータス</th>
+          <th>期日</th>
+          <th>削除</th>
+        </tr>
+      </thead>
+      <tbody id="todo-list">
 
-      </ul>
+      </tbody>
+    </table>
   </div>
-  <script src="main.js"></script>
-  <script src="index.js"></script>
+  <script src="add_todo.js"></script>
+  <script src="display_todo.js"></script>
+  <script src="delete_todo.js"></script>
 </body>
 </html>

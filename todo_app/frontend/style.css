@@ -1,11 +1,16 @@
 body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
   margin: 20px;
 }
 
 #app {
-  max-width: 400px;
-  margin: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 input {
@@ -17,14 +22,47 @@ button {
   padding: 10px;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+#new-todo-status {
+  width: 150px;
+  padding: 5px;
+  font-size: 14px;
 }
 
-li {
+#new-todo-deadline {
+  width: 120px;
+}
+
+.todo-inputs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.todo-inputs input,
+.todo-inputs select,
+.todo-inputs button {
+  height: 40px;
+  padding: 5px 10px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.todo-inputs button {
+  width: 100px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
   padding: 10px;
-  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+thead th {
+  border-bottom: 2px solid #000;
 }
 
 .delete-button {
